@@ -1,0 +1,82 @@
+### GET Request
+
+GET https://localhost:5001/items
+
+### POST Request
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Amateur's Armor Repair Kit",
+  "description": "15% of armor durability restored",
+  "price": 20
+}
+
+###
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Kaedweni Stout",
+  "description": "Regenerates Vitality",
+  "price": 5
+}
+
+###
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Svarog Runestone",
+  "description": "Adds 20 Armor Piercing to any weapon slot",
+  "price": 35
+}
+
+###
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Erveluce",
+  "description": "Regenerates Armor",
+  "price": 15
+}
+
+###
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Rivian Kriek",
+  "description": "Increases magic",
+  "price": 13
+}
+
+###
+POST https://localhost:5001/items HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Basilisk decoction",
+  "description": "Applies a buff increasing the intensity of a randomly selected Sign at dusk and dawn",
+  "price": 27
+}
+
+### GET by id
+
+GET https://localhost:5001/items/06b5c402-4195-474b-9443-9affd6f1fcbb
+
+### PUT
+
+PUT https://localhost:5001/items/3471c75f-4da3-4cb1-9326-2854ef7f70cc HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Rivian Kriek",
+  "description": "Increases magic",
+  "price": 15
+}
+
+### DELETE
+
+DELETE https://localhost:5001/items/06b5c402-4195-474b-9443-9affd6f1fcbb HTTP/1.1
